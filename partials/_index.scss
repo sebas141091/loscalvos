@@ -1,0 +1,172 @@
+.contenedor__carrusel{
+  background: $Fondo;
+}
+
+.marcas{
+    margin: 0 auto;
+    margin-top: 4em;
+    margin-bottom:5em;
+    h1{
+        @include flex(center);
+    }
+    &__contenedor{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+.novedades{
+  &__titulo{
+    text-align:center ;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5em;
+  }
+  &__redes{
+    @include flexWrap(space-around);
+    .redes__contenedor{
+    position: relative;
+    width: 400px;
+    height: 38.35em;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    ;
+    margin-bottom: 1em;
+    
+  .contenedor__efecto {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 24.0625em;
+    height: 37.2em;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+  }
+    .contenedor__grilla{    
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:45px  1fr;
+
+
+      }
+    }
+  }
+
+}
+
+.pruebaInsta2{
+  width: inherit;
+  height: inherit;
+  margin-top: -2.2em;
+}
+
+.prueba2fb{
+  margin-top: 1em;
+}
+
+.pruebaInsta{
+height: 35em;
+width: 24.2em;
+margin-top: -2.65em;
+margin-left: -.6em;
+}
+ 
+/************************************************botonos redes*/
+
+.button__fb {
+    @include btnRedes(#3b5998)
+  }
+  
+  .button__fb::before {
+   @include btnBefore();
+    content: "f";
+  }
+  
+  .button__fb::after {
+    content: "acebook";
+    @include btnAfter(#3b5998);
+  }
+  
+ 
+  .button__fb:hover::after {
+    opacity: 1;
+    font-size: 1em;
+    transform: translateX(0px);
+  }
+  
+  .button__fb:hover .shine {
+    transform: translate(-70px ,10px);
+  }
+  
+  /*instagram*/
+
+.button__inst {
+   @include btnRedes(#e4405f) 
+  }
+  
+  .button__inst::before {
+    @include btnBefore();
+  }
+  
+  .button__inst::after {
+    content: "Instagram";
+    @include btnAfter(#e4405f);
+    margin-left: .4em;
+  }
+  
+ 
+  .button__inst:hover::after {
+    opacity: 1;
+    font-size: 1em;
+    transform: translateX(0px);
+  }
+  
+  .button__inst:hover .shine {
+    transform: translate(-70px ,10px);
+  }
+  .blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 21.875em;
+    height: 30em;
+    border-radius: 50%;
+    background-color: $Fondo;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
+  @keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  }
+  

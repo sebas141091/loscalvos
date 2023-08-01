@@ -1,0 +1,71 @@
+header{
+    background: url(../imagenes/body.png) repeat-x 0 0 scroll transparent;
+    height: 7.55em;
+    width: 100%;
+
+    .BarraNavegacion{
+        @include flex(center);
+        flex-wrap: wrap;
+       
+        &__logo{
+            margin-right: 2em;
+            display: flex;
+            .logo__img{
+                height: 6.9em;
+            }
+        }
+        .menu{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+
+            .Conocenos .Productos .Recetas .Pregfrecuentes .ContactenosN{
+              margin-right: 10px;   
+            }
+            .Conocenos .menu__caja{
+                width: 5.1em;
+              }
+              .Productos .menu__caja{
+                  width: 5em;
+              }  
+              .Recetas .menu__caja{
+                  width: 4.7em;
+              }
+              
+              .ContactenosN .menu__caja{
+                  width: 5.7em;
+              }
+              .Pregfrecuentes .menu__caja{
+                  width: 6.5em;
+              }
+            .link{
+                font-size: 1.15em;
+                color: #fff ;
+                .menu__caja{
+                    background: linear-gradient(360deg, rgba(0,0,0,1) 15%, rgba(14,14,14,1) 55%, rgba(125,125,125,1) 100%);
+                    padding-top: 1.87em;
+                    padding-bottom: .5em;
+                    text-align: center;
+                    border-bottom-left-radius: .625em;
+                    border-bottom-right-radius : .625em;
+                    margin-left: 10px;
+
+                    &:hover{
+                        background: linear-gradient(360deg, rgba(181,10,10,1) 15%, rgba(181,14,14,1) 55%, rgba(125,125,125,20)95%);
+                        padding-top: 2.81em;
+                        padding-bottom: .2em;
+                        text-align: center;
+                        border-bottom-left-radius : .625em;;
+                        border-bottom-right-radius : .625em;;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    .link , .headerLogo{
+        color: blanchedalmond;
+    }
+}
+
+
