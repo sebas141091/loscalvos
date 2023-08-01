@@ -1,0 +1,36 @@
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+*{
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrusel__imagenes{
+    height: 400px;
+    object-fit: contain;    
+}
+/*
+main{
+    background: $Fondo;
+}*/
+.navResponsive
+{
+    display: none;
+}
+.headerLogo{
+    color:#a0a0a0;
+}
+p , h6 ,h4, label , input ,h1{
+    font-family: 'Cormorant Garamond', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lora', serif;
+}
+h1{
+    color: $tituloVerde;
+}

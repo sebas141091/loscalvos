@@ -1,0 +1,104 @@
+@media only screen and (max-width: 937px) {
+    /*PRODUCTOS*/
+    .galeria{
+       
+        grid-template-columns: repeat(3,200px);
+       
+    }
+    /***********/
+}
+
+@media only screen and (max-width: 794px) {
+    /*barra de navegacion*/
+    .BarraNavegacion{
+        display: none !important;
+    }
+    .navResponsive{
+        display: flex;
+    }
+    .caja--logo{
+        height: 110px;
+        margin-top: -15px;
+    }
+    .logoNav{
+        color: #000;
+        border-radius: 5px;
+        padding: 15px;
+        font-size: 2em;
+    }
+    /*barra de navegacion*/
+
+    /*contactenos*/
+    .Contactenos{
+       display: block !important;
+    }
+    .sugerencias__titulo{
+        margin-top: 2em;
+    }
+    .establecimientos{
+        grid-area: 4/1;
+    }
+  
+    /*contactenos*/
+    
+/************** historia */
+
+    .historia__empresa{
+        width: 100% !important;
+    }
+
+}
+@media only screen and (max-width: 683px) {
+    /*PRODUCTOS*/
+    .galeria{
+        grid-template-columns: repeat(2,210px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /*PRODUCTOS*/
+    .historia__empresa__hoy{
+       width: 20em;
+    }
+    /*PRODUCTOS*/
+}
+
+@media only screen and (max-width: 460px) {
+    /*PRODUCTOS*/
+    .galeria{
+       
+        grid-template-columns: repeat(1,200px);
+       
+    }
+}
+@media only screen and (max-width: 427px) {
+    /*PRODUCTOS*/
+    .historia__titulo{
+        flex-wrap: wrap;
+    }
+    .form__input{
+        width: 90% !important;
+    }
+}
+@media only screen and (max-width: 420px) {
+    /*PRODUCTOS*/
+    .empresa{
+        display: block;
+    }
+    .lineaTemporal{
+        background: #fff;
+        padding-bottom: 20px;
+    }
+    /*PRODUCTOS*/
+}
+
+@media only screen and (max-width: 315px) {
+    /*PRODUCTOS*/
+    .marcas__contenedor{
+        flex-direction: column-reverse;
+    }
+
+    .establecimiento__parrafo{
+        width: 90% !important;
+    }
+}

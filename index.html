@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Dancing+Script:wght@700&family=Lora&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./imagenes/icono.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,32 +13,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b4900dfe73.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./stilo/style.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="./css/styles.css">
     
     <title>Los Calvos</title>
 </head>
 <body>
+
   <header>
 <!--**************************nav******************************-->   
     <nav class="BarraNavegacion">
-      <div class="logo">
-          <a href="./index.html"><img class="logo--img" src="./imagenes/logo.png" alt="logo"></a>
+      <div class="BarraNavegacion__logo">
+          <a href="./index.html"><img class="logo__img" src="./imagenes/logo.png" alt="logo"></a>
       </div>
-        <ul class="contenedor--menu">
-          <li class="Conocenos"><a class="link" href="./pages/empresa.html"><div class="menu--caja">Conocenos</div></a></li>
-          <li class="Productos"><a class="link" href="./pages/productos.html"><div class="menu--caja">Productos</div></a></li>
-          <li class="Recetas"><a class="link" href="#"><div class="menu--caja">Recetas</div></a></li>
-          <li class="Pregfrecuentes"><a class="link" href="./pages/PregFrecuentes.html"><div class="menu--caja">Preg frecuentes</div></a></li>
-          <li class="Contactenos"><a class="link" href="./pages/contactenos.html"><div class="menu--caja">Contactenos</div></a></li>
+        <ul class="menu">
+          <li class="Conocenos"><a class="link" href="./pages/empresa.html"><div class="menu__caja">Conocenos</div></a></li>
+          <li class="Productos"><a class="link" href="./pages/productos.html"><div class="menu__caja">Productos</div></a></li>
+          <li class="Recetas"><a class="link" href="#"><div class="menu__caja">Recetas</div></a></li>
+          <li class="Pregfrecuentes"><a class="link" href="./pages/PregFrecuentes.html"><div class="menu__caja">Preg frecuentes</div></a></li>
+          <li class="ContactenosN"><a class="link" href="./pages/contactenos.html"><div class="menu__caja">Contactenos</div></a></li>
         </ul>
     </nav>
 <!--*************************************************************nav responsive*********************************************************************************-->
     <nav class="navbar navbar-dark  navResponsive">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html"><img class="caja--logo" src="./imagenes/logo.png" alt="logo"></a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars logoNav"></i>
         </button>
+      
 
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div class="offcanvas-header">
@@ -59,39 +68,26 @@
               <li class="nav-item">
                 <a class="link" href="./pages/contactenos.html">Contactenos</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+              
             </ul> 
           </div>
         </div>
       </div>
     </nav>
   </header> 
-<!--**********************************************************nav responsive*********************************************************************-->
-    
-<!--***********************************************************carrusel de imagenes***************************************************************-->
-  <main>  
-    <div id="carouselExampleAutoplaying" class="carousel slide  contenedor--carrusel" data-bs-ride="carousel">
+  <main >  
+
+
+    <section id="carouselExampleAutoplaying" class="carousel slide  contenedor__carrusel" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./imagenes/mortPruebaT.jpg" class="d-block w-100 carrusel--imagenes" alt="mortadela">
+          <img src="./imagenes/mortPruebaT.jpg" class="d-block w-100 img-fluid carrusel__imagenes" alt="mortadela">
         </div>
         <div class="carousel-item">
-          <img src="./imagenes/bondiola1.jpg" class="d-block w-100 carrusel--imagenes" alt="bondiola">
+          <img src="./imagenes/bondiola1.jpg" class="d-block w-100 img-fluid carrusel__imagenes" alt="bondiola">
         </div>
         <div class="carousel-item">
-          <img src="./imagenes/montBlanc.jpg" class="d-block w-100 carrusel--imagenes" alt="mont blanc">
+          <img src="./imagenes/montBlanc.jpg" class="d-block w-100 img-fluid carrusel__imagenes" alt="mont blanc">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -102,57 +98,50 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-  <!--**********************************carrusel de imagenes**********-->
-  <!--**********************************caja contenedor de novedades**********-->
-      <div class="novedades">
-        <h1 class="titulo--novedades">Ultimas novedades</h1>
-        <div class="caja--novedades">
-        <!--**********************************caja contenedor de acordeon de redes sociales fb  **********-->
-          <div class="accordion acordeonPadre" id="accordionExample">
-            <div class="accordion-item AcordeonHijos">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <div class="caja--ico"> 
-                    <i class="fab fa-facebook-f novedades--fb__ico" ></i>
-                  </div>
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <div class="novedades--Fb">
-                    <div class="fb-page pfb" data-href="https://www.facebook.com/fiambresloscalvos/" data-tabs="timeline" data-small-header="false"  
-                    width="400px" data-show-facepile="false"><blockquote cite="https://www.facebook.com/fiambresloscalvos/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/fiambresloscalvos/">Fiambres Los Calvos 42</a></blockquote>
-                    </div>
-                  </div>
+    </section>
+    
+      <section class="marcas">
+        <h1>Marcas</h1>
+        <div class="marcas__contenedor">
+            <img src="./logosMarcas/zurlinde.jpg"data-aos="fade-up-right" alt="">
+            <img src="./logosMarcas/lc42.png"  alt="">
+            <img data-aos="fade-left" src="./logosMarcas/Chucuten.jpg" alt="">
+        </div>
+      </section>
+
+      <section class="novedades">
+          <h1 class="novedades__titulo">Ultimas novedades</h1>
+        
+          <div class="novedades__redes">
+            
+            <div class="redes__contenedor">
+
+              <div class="contenedor__efecto contendor__grilla">
+                <div class=" button__fb">
+                </div>
+                <div class="fb-page prueba2fb" data-href="https://www.facebook.com/fiambresloscalvos/" data-tabs="timeline" data-small-header="false"  
+                width="400px" data-show-facepile="false"><blockquote cite="https://www.facebook.com/fiambresloscalvos/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/fiambresloscalvos/">Fiambres Los Calvos 42</a></blockquote>
                 </div>
               </div>
-            </div>
-          </div>    
-<!--**********************************caja contenedor de acordeon de redes sociales intagram   **********-->
-          <div class="accordion acordeonPadre" id="accordionExample">
-            <div class="accordion-item AcordeonHijos">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <div class="caja--ico">
-                    <i class="fab fa-instagram novedades--ins__ico"></i>
-                  </div>
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <div class="novedades--insta" >
-                    <iframe class=" pruebaInsta" src='https://www.juicer.io/api/feeds/sebas141091/iframe'></iframe>
-                  </div>
-                </div>
+              <div class="blob">
               </div>
             </div>
-          </div>    
-      </div>
-    </div>             
+
+            <div class="redes__contenedor">
+              <div class="contenedor__efecto contendor__grilla">
+                <div class="button__inst" >     
+                  <li class="fab fa-instagram acordeonHijos__ico--ins"></li>
+                </div>
+                  <iframe class=" pruebaInsta2" src='https://www.juicer.io/api/feeds/sebas141091/iframe'></iframe>
+              </div>
+              <div class="blob">
+              </div>
+            </div>
+      </div>   
+
+      </section>
+   
   </main>    
-<!--**********************************caja contenedor de acordeon de redes sociales   **********-->
-<!--**********************************caja contenedor de novedades    **************************-->
   <footer>
     © 2023 Establecimiento Los Calvos S.R.L. - Todos los derechos reservados - Av. Juan B. Alberdi 5401 - Capìtal Federal - Buenos Aires - Argentina
     <div class="Seguinos">Seguinos en :</div>
@@ -164,9 +153,16 @@
           </ul>
     </div>
   </footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <div id="fb-root">
   </div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v17.0&appId=251101574392335&autoLogAppEvents=1" nonce="wkyOkuGi"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
