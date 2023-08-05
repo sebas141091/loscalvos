@@ -3,7 +3,7 @@ header{
     height: 7.55em;
     width: 100%;
 
-    .BarraNavegacion{
+    .barraNavegacion{
         @include flex(center);
         flex-wrap: wrap;
        
@@ -19,23 +19,23 @@ header{
             display: flex;
             flex-direction: row;
 
-            .Conocenos .Productos .Recetas .Pregfrecuentes .ContactenosN{
+            .conocenos .productos .recetas .pregfrecuentes .contactenosN{
               margin-right: 10px;   
             }
-            .Conocenos .menu__caja{
+            .conocenos .menu__caja{
                 width: 5.1em;
               }
-              .Productos .menu__caja{
+              .productos .menu__caja{
                   width: 5em;
               }  
-              .Recetas .menu__caja{
+              .recetas .menu__caja{
                   width: 4.7em;
               }
               
-              .ContactenosN .menu__caja{
+              .contactenosN .menu__caja{
                   width: 5.7em;
               }
-              .Pregfrecuentes .menu__caja{
+              .pregfrecuentes .menu__caja{
                   width: 6.5em;
               }
             .link{
@@ -63,7 +63,7 @@ header{
             }
         }
     }
-    .link , .headerLogo{
+    .link , .header--logo{
         color: blanchedalmond;
     }
 }

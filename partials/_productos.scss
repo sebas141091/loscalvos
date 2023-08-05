@@ -1,17 +1,17 @@
 
-.imagenBorrosa{
+.imagen--borrosa{
     filter: blur(5px);
     height: 400px;
     width: 100%;
     position: absolute;
     z-index: 100;
 }
-.imagenMuestra{
+.imagen--muestra{
     position: relative;
     z-index: 200;
     height: 400px;
 }
-.contenedorMuestra{
+.contenedor--muestra{
     width: 100%;
     display: flex;
     justify-content: center;

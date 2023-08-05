@@ -1,107 +1,43 @@
-.main__empresa{
-    background: #fff;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    .empresa{
-        display: grid;
-        grid-template-columns: 6em 1fr;
-        .lineaTemporal{
-            grid-column: 1;
-            @include flex(center);
-            position: sticky;
-            top: 0;
-            height: 9.5em;
-            
-            &__contenedor{
-                .contenedor__linea{
-                    &::before{
-                        content: '';
-                        position: absolute;
-                        height: 100%;
-                        width: 2px;
-                        margin-left: -.32em;
-                        background-color:#000;
-                        margin-top: -2px;
-                    }
-                    .linea__lista{
-                        list-style-type: disc;
-                        font-size: 2em;
-                        padding-left: .6em;
-                     
-                        .lista__contenido{
-                            margin-bottom: 20px;
-                            .contenedor__lineatemporal{
-                                margin-left: -.4em;
-                                .contenido__ref{
-                                    color: $tituloVerde;
-                                    &--titulo{
-                                        font-weight: bold;
-                                        font-size: .7em;
-                                        &::first-letter{
-                                            color:$tituloRojo
-                                        }
-                                    }
-                                }
+
+
+ .c2{
+    background: green;
+}
+.lineaTemporal__contenedor{
+    top: 0;
+     height: 9.5em;
+     @include flex(center);
+    .contenedor__linea{
+        &::before{
+            content: '';
+            position: absolute;
+            height: 9em;
+            width: 2px;
+            margin-left: -.2em;
+            background-color:#000;
+            margin-top: -2px;
+        }
+        .linea__lista{
+            list-style-type: disc;
+            font-size: 2em;
+            padding-left: .6em;
+         
+            .lista__contenido{
+                margin-bottom: 20px;
+                .contenedor__lineatemporal{
+                    margin-left: -.4em;
+                    .contenido__ref{
+                        color: $tituloVerde;
+                        &--titulo{
+                            font-weight: bold;
+                            font-size: .7em;
+                            &::first-letter{
+                                color:$tituloRojo
                             }
                         }
                     }
                 }
             }
         }
-
-        .empresaContenedor{
-            @include flex(center);
-            grid-column: 2;
-            .historia{
-                font-weight: bold;
-                
-                &__titulo{
-                    margin-top: .3em;
-                    display: flex;
-                    font-size: 2em;
-                    color: $tituloRojo;
-                    border-bottom: $tituloVerde;
-                }
-                &__subTitulo{
-                    color: $tituloVerde;
-                    margin-left: .3em;
-                }
-                &__TituloNuestros{
-                    margin-top: .5em;
-                    color: $tituloRojo;
-                    font-weight: bold;
-                }
-                &__empresa{
-                    width: 40.625em;
-                    float: left;
-                    font-family: 'Cormorant Garamond', serif;
-                    font-family: 'Dancing Script', cursive;
-                    font-family: 'Lora', serif;
-                    &__ayer{
-
-                        float: right;
-                        margin: 0px 0px 0px 0.4375em;
-                        padding: 0px 0px 0px 5px;
-                    }
-                    &__hoy{
-                        float: left;
-                        width: 21.875em;
-                        height: 14.375em;
-                        margin-left: -0.5px;
-                        padding-left: 0;
-                        margin-right: 1em;
-                    }
-                    .botonSugerencia{
-                        @include boton();
-                    }
-                    .video
-                    {
-                        width: 100%
-                    }
-                }
-            }
-        }
     }
-
 }

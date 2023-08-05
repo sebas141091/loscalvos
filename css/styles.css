@@ -31,7 +31,7 @@ main{
   color: #a0a0a0;
 }
 
-p, h6, h4, label, input, h1 {
+p, h6, h4, label, input, h1, h2 {
   font-family: "Cormorant Garamond", serif;
   font-family: "Dancing Script", cursive;
   font-family: "Lora", serif;
@@ -46,46 +46,46 @@ header {
   height: 7.55em;
   width: 100%;
 }
-header .BarraNavegacion {
+header .barraNavegacion {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-header .BarraNavegacion__logo {
+header .barraNavegacion__logo {
   margin-right: 2em;
   display: flex;
 }
-header .BarraNavegacion__logo .logo__img {
+header .barraNavegacion__logo .logo__img {
   height: 6.9em;
 }
-header .BarraNavegacion .menu {
+header .barraNavegacion .menu {
   list-style: none;
   display: flex;
   flex-direction: row;
 }
-header .BarraNavegacion .menu .Conocenos .Productos .Recetas .Pregfrecuentes .ContactenosN {
+header .barraNavegacion .menu .conocenos .productos .recetas .pregfrecuentes .contactenosN {
   margin-right: 10px;
 }
-header .BarraNavegacion .menu .Conocenos .menu__caja {
+header .barraNavegacion .menu .conocenos .menu__caja {
   width: 5.1em;
 }
-header .BarraNavegacion .menu .Productos .menu__caja {
+header .barraNavegacion .menu .productos .menu__caja {
   width: 5em;
 }
-header .BarraNavegacion .menu .Recetas .menu__caja {
+header .barraNavegacion .menu .recetas .menu__caja {
   width: 4.7em;
 }
-header .BarraNavegacion .menu .ContactenosN .menu__caja {
+header .barraNavegacion .menu .contactenosN .menu__caja {
   width: 5.7em;
 }
-header .BarraNavegacion .menu .Pregfrecuentes .menu__caja {
+header .barraNavegacion .menu .pregfrecuentes .menu__caja {
   width: 6.5em;
 }
-header .BarraNavegacion .menu .link {
+header .barraNavegacion .menu .link {
   font-size: 1.15em;
   color: #fff;
 }
-header .BarraNavegacion .menu .link .menu__caja {
+header .barraNavegacion .menu .link .menu__caja {
   background: linear-gradient(360deg, rgb(0, 0, 0) 15%, rgb(14, 14, 14) 55%, rgb(125, 125, 125) 100%);
   padding-top: 1.87em;
   padding-bottom: 0.5em;
@@ -94,7 +94,7 @@ header .BarraNavegacion .menu .link .menu__caja {
   border-bottom-right-radius: 0.625em;
   margin-left: 10px;
 }
-header .BarraNavegacion .menu .link .menu__caja:hover {
+header .barraNavegacion .menu .link .menu__caja:hover {
   background: linear-gradient(360deg, rgb(181, 10, 10) 15%, rgb(181, 14, 14) 55%, rgb(125, 125, 125) 95%);
   padding-top: 2.81em;
   padding-bottom: 0.2em;
@@ -103,7 +103,7 @@ header .BarraNavegacion .menu .link .menu__caja:hover {
   border-bottom-right-radius: 0.625em;
   transition: 0.5s;
 }
-header .link, header .headerLogo {
+header .link, header .header--logo {
   color: blanchedalmond;
 }
 
@@ -311,113 +311,48 @@ header .link, header .headerLogo {
     transform: translate(-100%, -100%) translate3d(0, 0, 0);
   }
 }
-.main__empresa {
-  background: #fff;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.c2 {
+  background: green;
 }
-.main__empresa .empresa {
-  display: grid;
-  grid-template-columns: 6em 1fr;
-}
-.main__empresa .empresa .lineaTemporal {
-  grid-column: 1;
-  display: flex;
-  justify-content: center;
-  position: sticky;
+
+.lineaTemporal__contenedor {
   top: 0;
   height: 9.5em;
+  display: flex;
+  justify-content: center;
 }
-.main__empresa .empresa .lineaTemporal__contenedor .contenedor__linea::before {
+.lineaTemporal__contenedor .contenedor__linea::before {
   content: "";
   position: absolute;
-  height: 100%;
+  height: 9em;
   width: 2px;
-  margin-left: -0.32em;
+  margin-left: -0.2em;
   background-color: #000;
   margin-top: -2px;
 }
-.main__empresa .empresa .lineaTemporal__contenedor .contenedor__linea .linea__lista {
+.lineaTemporal__contenedor .contenedor__linea .linea__lista {
   list-style-type: disc;
   font-size: 2em;
   padding-left: 0.6em;
 }
-.main__empresa .empresa .lineaTemporal__contenedor .contenedor__linea .linea__lista .lista__contenido {
+.lineaTemporal__contenedor .contenedor__linea .linea__lista .lista__contenido {
   margin-bottom: 20px;
 }
-.main__empresa .empresa .lineaTemporal__contenedor .contenedor__linea .linea__lista .lista__contenido .contenedor__lineatemporal {
+.lineaTemporal__contenedor .contenedor__linea .linea__lista .lista__contenido .contenedor__lineatemporal {
   margin-left: -0.4em;
 }
-.main__empresa .empresa .lineaTemporal__contenedor .contenedor__linea .linea__lista .lista__contenido .contenedor__lineatemporal .contenido__ref {
+.lineaTemporal__contenedor .contenedor__linea .linea__lista .lista__contenido .contenedor__lineatemporal .contenido__ref {
   color: rgb(0, 128, 0);
 }
-.main__empresa .empresa .lineaTemporal__contenedor .contenedor__linea .linea__lista .lista__contenido .contenedor__lineatemporal .contenido__ref--titulo {
+.lineaTemporal__contenedor .contenedor__linea .linea__lista .lista__contenido .contenedor__lineatemporal .contenido__ref--titulo {
   font-weight: bold;
   font-size: 0.7em;
 }
-.main__empresa .empresa .lineaTemporal__contenedor .contenedor__linea .linea__lista .lista__contenido .contenedor__lineatemporal .contenido__ref--titulo::first-letter {
+.lineaTemporal__contenedor .contenedor__linea .linea__lista .lista__contenido .contenedor__lineatemporal .contenido__ref--titulo::first-letter {
   color: rgb(250, 0, 0);
-}
-.main__empresa .empresa .empresaContenedor {
-  display: flex;
-  justify-content: center;
-  grid-column: 2;
-}
-.main__empresa .empresa .empresaContenedor .historia {
-  font-weight: bold;
-}
-.main__empresa .empresa .empresaContenedor .historia__titulo {
-  margin-top: 0.3em;
-  display: flex;
-  font-size: 2em;
-  color: rgb(250, 0, 0);
-  border-bottom: rgb(0, 128, 0);
-}
-.main__empresa .empresa .empresaContenedor .historia__subTitulo {
-  color: rgb(0, 128, 0);
-  margin-left: 0.3em;
-}
-.main__empresa .empresa .empresaContenedor .historia__TituloNuestros {
-  margin-top: 0.5em;
-  color: rgb(250, 0, 0);
-  font-weight: bold;
-}
-.main__empresa .empresa .empresaContenedor .historia__empresa {
-  width: 40.625em;
-  float: left;
-  font-family: "Cormorant Garamond", serif;
-  font-family: "Dancing Script", cursive;
-  font-family: "Lora", serif;
-}
-.main__empresa .empresa .empresaContenedor .historia__empresa__ayer {
-  float: right;
-  margin: 0px 0px 0px 0.4375em;
-  padding: 0px 0px 0px 5px;
-}
-.main__empresa .empresa .empresaContenedor .historia__empresa__hoy {
-  float: left;
-  width: 21.875em;
-  height: 14.375em;
-  margin-left: -0.5px;
-  padding-left: 0;
-  margin-right: 1em;
-}
-.main__empresa .empresa .empresaContenedor .historia__empresa .botonSugerencia {
-  color: #000;
-  background: linear-gradient(90deg, rgb(231, 241, 127) 0%, rgb(237, 234, 142) 0%, rgba(236, 210, 56, 0.7343312325) 100%);
-  width: 12.5em;
-  font-size: 1em;
-  border-radius: 0.3em;
-  border: 0.1px #000 solid;
-  margin-top: 20px;
-  display: block;
-}
-.main__empresa .empresa .empresaContenedor .historia__empresa .video {
-  width: 100%;
 }
 
-.imagenBorrosa {
+.imagen--borrosa {
   filter: blur(5px);
   height: 400px;
   width: 100%;
@@ -425,13 +360,13 @@ header .link, header .headerLogo {
   z-index: 100;
 }
 
-.imagenMuestra {
+.imagen--muestra {
   position: relative;
   z-index: 200;
   height: 400px;
 }
 
-.contenedorMuestra {
+.contenedor--muestra {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -515,75 +450,131 @@ header .link, header .headerLogo {
   height: inherit;
 }
 
+.pregFrecuentes {
+  width: 100%;
+}
+.pregFrecuentes__decoracion {
+  background-image: url(../imagenes/paraPregFrecuentes.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .main__contactenos {
   display: flex;
   justify-content: center;
-  margin-left: 0.6em;
-  background: #fff;
 }
-.main__contactenos .Contactenos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 50px) 1fr;
-  width: 53.125em;
-  margin: 0 auto;
-  margin-top: 3.125em;
+
+.caja1 {
+  margin-top: 2em;
 }
-.main__contactenos .Contactenos__titulo {
-  grid-column: 1/3;
-  grid-row: 1/1;
-  font-size: 2em;
-  font-weight: bold;
+
+.contactenos__titulo {
   color: rgb(0, 128, 0);
-  border-bottom: 1px rgb(0, 128, 0) solid;
 }
-.main__contactenos .Contactenos__sugerencias {
-  grid-area: 3/1;
-  margin-bottom: 2.5em;
+
+.sugerencias {
+  margin-top: 1.59em;
 }
-.main__contactenos .Contactenos__sugerencias .sugerencias__titulo {
-  font-weight: bold;
-  color: rgb(250, 0, 0);
+.sugerencias__titulo {
   border-top: 1px rgb(125, 125, 125) solid;
   border-bottom: 1px rgb(125, 125, 125) solid;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-right: 20px;
   margin-bottom: 1em;
-}
-.main__contactenos .Contactenos__sugerencias .form__label {
-  display: block;
-}
-.main__contactenos .Contactenos__sugerencias .form__input, .main__contactenos .Contactenos__sugerencias .form__Destinatario {
-  width: 23em;
-}
-.main__contactenos .Contactenos__sugerencias textarea {
-  display: block;
-  width: 90%;
-}
-.main__contactenos .Contactenos__sugerencias .botonSugerencia {
-  color: #000;
-  background: linear-gradient(90deg, rgb(231, 241, 127) 0%, rgb(237, 234, 142) 0%, rgba(236, 210, 56, 0.7343312325) 100%);
-  width: 12.5em;
   font-size: 1em;
-  border-radius: 0.3em;
-  border: 0.1px #000 solid;
+  font-weight: bold;
+  color: #000;
+}
+.sugerencias .form {
   margin-top: 20px;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
-.main__contactenos .Contactenos .establecimientos {
-  grid-area: 3/2;
+.sugerencias .form__destinatario {
+  margin-bottom: 1em;
 }
-.main__contactenos .Contactenos .establecimientos .establecimiento .sugerencias__titulo {
-  color: rgb(250, 0, 0);
+.sugerencias .form__destinatario .destinatario__option {
   font-weight: bold;
 }
-.main__contactenos .Contactenos .establecimientos .establecimiento__parrafo {
+.sugerencias .group {
+  position: relative;
+}
+.sugerencias .form .group label {
+  font-size: 14px;
+  color: #000;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.sugerencias .form .group input,
+.sugerencias .form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+.sugerencias .form .group input:-moz-placeholder-shown + label, .sugerencias .form .group textarea:-moz-placeholder-shown + label {
+  top: 10px;
+  background-color: transparent;
+}
+.sugerencias .form .group input:placeholder-shown + label, .sugerencias .form .group textarea:placeholder-shown + label {
+  top: 10px;
+  background-color: transparent;
+}
+.sugerencias .form .group input:focus,
+.sugerencias .form .group textarea:focus {
+  border-color: rgb(225, 225, 140);
+}
+.sugerencias .form .group input:focus + label, .sugerencias .form .group textarea:focus + label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: rgb(225, 225, 140);
+  font-weight: bold;
+  font-size: 1em;
+}
+.sugerencias .form .group textarea {
+  resize: none;
+  height: 100px;
+}
+.sugerencias .form button {
+  background-color: rgb(225, 225, 140);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  font-weight: bold;
+}
+.sugerencias .form button:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+.establecimientos {
+  margin-top: 4em;
+}
+.establecimientos .establecimiento .sugerencias__titulo {
+  color: rgb(250, 0, 0);
+  font-weight: bold;
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.establecimientos .establecimiento__parrafo {
   width: 18.75em;
   margin-left: 0.5em;
   margin-bottom: 5px;
 }
-.main__contactenos .Contactenos .establecimientos .establecimiento .mapa {
+.establecimientos .establecimiento .mapa {
   margin-top: 1em;
   margin-bottom: 2em;
   width: 90%;
@@ -633,6 +624,9 @@ footer .inst:hover {
   background: #e4405f;
 }
 
+/*1400px*/
+/**1200*/
+/*992*/
 @media only screen and (max-width: 937px) {
   /*PRODUCTOS*/
   .galeria {
@@ -640,9 +634,10 @@ footer .inst:hover {
   }
   /***********/
 }
+/*768*/
 @media only screen and (max-width: 794px) {
   /*barra de navegacion*/
-  .BarraNavegacion {
+  .barraNavegacion {
     display: none !important;
   }
   .navResponsive {
@@ -655,24 +650,13 @@ footer .inst:hover {
   .logoNav {
     color: #000;
     border-radius: 5px;
-    padding: 15px;
     font-size: 2em;
   }
-  /*barra de navegacion*/
-  /*contactenos*/
-  .Contactenos {
-    display: block !important;
-  }
-  .sugerencias__titulo {
-    margin-top: 2em;
-  }
-  .establecimientos {
-    grid-area: 4/1;
-  }
-  /*contactenos*/
-  /************** historia */
   .historia__empresa {
     width: 100% !important;
+  }
+  .c1 {
+    display: none;
   }
 }
 @media only screen and (max-width: 683px) {
@@ -680,10 +664,14 @@ footer .inst:hover {
   .galeria {
     grid-template-columns: repeat(2, 210px);
   }
+  .pregFrecuentes__decoracion {
+    height: 30em;
+  }
 }
+/*576*/
 @media only screen and (max-width: 480px) {
   /*PRODUCTOS*/
-  .historia__empresa__hoy {
+  .historia__empresa--hoy {
     width: 20em;
   }
   /*PRODUCTOS*/
@@ -698,9 +686,6 @@ footer .inst:hover {
   /*PRODUCTOS*/
   .historia__titulo {
     flex-wrap: wrap;
-  }
-  .form__input {
-    width: 90% !important;
   }
 }
 @media only screen and (max-width: 420px) {
