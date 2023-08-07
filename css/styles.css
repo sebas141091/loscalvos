@@ -534,15 +534,15 @@ video {
   font-weight: bold;
 }
 
-.pregFrecuentes {
-  width: 100%;
-}
-.pregFrecuentes__decoracion {
-  background-image: url(../imagenes/paraPregFrecuentes.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
+/* para revisar 
+.pregFrecuentes{
+    width: 100%;
+    &__decoracion{
+        background-image: url(../imagenes/paraPregFrecuentes.jpg);
+       background-size: cover;
+        background-position: center;
+    }
+}*/
 .main__contactenos {
   display: flex;
   justify-content: center;
