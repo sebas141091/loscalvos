@@ -534,15 +534,15 @@ video {
   font-weight: bold;
 }
 
-/* para revisar 
-.pregFrecuentes{
-    width: 100%;
-    &__decoracion{
-        background-image: url(../imagenes/paraPregFrecuentes.jpg);
-       background-size: cover;
-        background-position: center;
-    }
-}*/
+.pregfrecuentes {
+  width: 100%;
+}
+.pregfrecuentes__decoracion {
+  background-image: url(../imagenes/paraPregFrecuentes.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
 .main__contactenos {
   display: flex;
   justify-content: center;
@@ -785,6 +785,7 @@ footer .inst:hover {
   background: rgb(225, 225, 140);
   border-radius: 5px;
   padding: 2em 5em;
+  margin-bottom: 2em;
 }
 .contenedor__ingredientes .ingredientes__caja--titulo {
   color: rgb(0, 128, 0);

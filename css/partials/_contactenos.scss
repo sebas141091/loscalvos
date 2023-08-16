@@ -1,0 +1,137 @@
+
+.main__contactenos{
+    display: flex;
+    justify-content:center;
+
+}
+.caja1{
+    margin-top: 2em;
+}
+.contactenos__titulo{
+    color: $tituloVerde;
+}
+.sugerencias{
+    margin-top: 1.59em;
+    &__titulo{
+       border-top: 1px rgba(125,125,125,1) solid;
+        border-bottom: 1px rgba(125,125,125,1) solid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 20px;
+        margin-bottom: 1em;
+        font-size: 1em;
+        font-weight: bold;
+        color: #000;
+    }
+   
+    
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    &__destinatario{
+        margin-bottom: 1em;
+        .destinatario__option{
+            font-weight: bold;
+        }
+    }
+  }
+  
+  .group {
+    position: relative;
+  }
+  
+  .form .group label {
+    font-size: 14px;
+    color: #000;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    transition: all .3s ease;
+  }
+  
+  .form .group input,
+  .form .group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
+  }
+  
+  .form .group input:focus,
+  .form .group textarea:focus {
+    border-color: $Fondo;
+  }
+  
+  .form .group input:focus+ label, .form .group textarea:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: $Fondo;
+    font-weight: bold;
+    font-size:1em;
+  }
+  
+  .form .group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .form button {
+    background-color: $Fondo;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all .7s ease;
+    font-weight: bold;
+  }
+  
+  .form button:hover {
+    color: #fff;
+    font-weight: bold;
+
+  }
+  
+  
+  
+}
+
+.establecimientos{
+    margin-top: 4em;
+    .establecimiento{
+        .sugerencias__titulo{
+            color: $tituloRojo;
+            font-weight: bold;
+            font-size: 1em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        &__parrafo{
+            width: 18.75em;
+            margin-left: .5em;
+            margin-bottom: 5px;
+        }
+        .mapa{
+            margin-top: 1em;
+            margin-bottom: 2em;
+            width: 90%;
+        }
+    }
+ }
+ 
+
+
+

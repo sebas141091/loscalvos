@@ -1,0 +1,77 @@
+
+@media only screen and (max-width: 937px) {
+    /*PRODUCTOS*/
+    .galeria{
+       
+        grid-template-columns: repeat(3,200px);
+       
+    }
+    /***********/
+}
+/*768*/
+@media only screen and (max-width: 794px) {
+    /*barra de navegacion*/
+    .barraNavegacion{
+        display: none !important;
+    }
+    .navResponsive{
+        display: flex;
+    }
+    .caja--logo{
+        height: 110px;
+        margin-top: -15px;
+    }
+    .logoNav{
+        color: #000;
+        border-radius: 5px;
+        font-size: 2em;
+    }
+
+
+    .historia__empresa{
+        width: 100% !important;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    .contenedor__colum1{
+        .lineaTemporal__contenedor{
+            display: none;
+        }
+        .lista__oculta{
+            display: flex !important;
+            justify-content: center;
+            position:sticky;
+            top: 0px;
+           
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 683px) {
+    /*PRODUCTOS*/
+    .galeria{
+        grid-template-columns: repeat(2,210px);
+    }
+    
+    .pregFrecuentes__decoracion{
+        height: 30em;
+    }
+}
+/*576*/
+
+
+@media only screen and (max-width: 460px) {
+    /*PRODUCTOS*/
+    .galeria{
+       
+        grid-template-columns: repeat(1,200px);
+       
+    }
+}
+
